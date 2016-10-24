@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="弹窗" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="2cL-Wg-DlW"/>
+                        <viewControllerLayoutGuide type="bottom" id="zrn-l0-X7U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q7x-Kt-SeQ">
+                                <rect key="frame" x="5" y="25" width="310" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8oU-5p-iQH"/>
+                                </constraints>
+                                <mutableString key="text">Now the war has come, bringing with it a new attitude. Youth has turned to gods we of an earlier day knew not, and it is possible to see already the direction in which those who come after us will move. The younger generation, conscious of strength and tumultuous, have done with knocking at the door; they have burst in and seated themselves in our seats. The air is noisy with their shouts. Of their elders some, by imitating the antics of youth, strive to persuade themselves that their day is not yet over; they shout with the lustiest, but the war cry sounds hollow in their mouth; they are like poor wantons attempting with pencil, paint and powder, with shrill gaiety, to recover the illusion of their spring. The wiser go their way with a decent grace. In their chastened smile is an indulgent mockery. They remember that they too trod down a sated generation, with just such clamor and with just such scorn, and they foresee that these brave torch-bearers will presently yield their place also. There is no last word. The new evangel was old when Nineveh reared her greatness to the sky. These gallant words which seem so novel to those that speak them were said in accents scarcely changed a hundred times before. The pendulum swings backwards and forwards. The circle is ever travelled anew.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q7x-Kt-SeQ" secondAttribute="trailing" constant="5" id="GNa-Iy-d2V"/>
+                            <constraint firstItem="q7x-Kt-SeQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="mOR-sb-URH"/>
+                            <constraint firstItem="q7x-Kt-SeQ" firstAttribute="top" secondItem="2cL-Wg-DlW" secondAttribute="bottom" constant="5" id="qRt-Jt-5Ck"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="124" y="321"/>
         </scene>
     </scenes>
 </document>
